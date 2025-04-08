@@ -1,0 +1,26 @@
+.preloader {
+    height: 100vh; /* viewport height, 100vh means it occupies full height of the screen dynamically */
+    width: 100%; /* takes 100% of parent */
+    background: #000000;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55; /* controls which element is on top */
+    display: flex; /* aligns items in row by default */
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader .texts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* spreads items */
+    height: 60px;
+    width: 280px;
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden; /* hides overflowed text */
+    color: #ffffff;
+}
