@@ -6,3 +6,24 @@ html,body {
     background: #0a0a0a;
     color: #f3f4f6;
 }
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.animate-typing {
+  width: 12ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(12) infinite alternate;
+}
+/* Fix section scroll offset */
+[id] {
+  scroll-margin-top: 0px; /* or 60px if your navbar is fixed */
+}
+html {
+  scroll-behavior: smooth;
+}
+.section {
+  scroll-margin-top: 100px;
+}
